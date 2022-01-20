@@ -6,10 +6,8 @@ import PlaceDetails from '../PlaceDetails/PlaceDetails'
 
 import useStyles from './styles.js'
 // {places}
-const List = ({places, childClicked, isLoading}) => {
+const List = ({places, childClicked, isLoading, type, setType, rating, setRating}) => {
     const classes = useStyles();
-    const [type, setType] = useState('restaurants'); //restaurants is the default value for type, type = state, setType = function that modifies the state
-    const [rating, setRating] = useState(''); 
 
     // use log on {childClicked} will give more info than childcliked alone
     // console.log({childClicked});
